@@ -1,0 +1,13 @@
+@import "./colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background-image: url('../img/paven2.jpg');
+    font-family: 'Rubik', sans-serif;
+}

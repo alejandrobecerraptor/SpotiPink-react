@@ -1,0 +1,62 @@
+@import '../../../styles/colors.scss';
+
+.o-card-playlist-container{
+    display: flex;
+    margin-top: 40px;
+    width: 50%;
+    height: 130px;
+    box-shadow: 0 8px 13px 0 rgba(161, 60, 161, 0.877);
+    background-color:$secondary-pink-dark;
+    border-radius: 40px;
+    &:hover {
+
+        text-shadow: 1px 1px 6px #fff;
+    }
+
+    img{
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+        margin: 14px;
+
+        &:hover{
+        box-shadow: 0 5px 6px #fff;
+        }   
+
+        @media(max-width:425px){
+            margin-top: 25px;
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .o-card-playlist-content{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @media(max-width:768px){
+            align-items:baseline;
+            
+        }
+
+        h1{
+            font-size: 20px;
+            color: white;
+            @media(max-width:768px){
+                font-size: 15px;
+            }
+            @media(max-width:425px){
+                font-size: 12px
+            }
+        }
+    }
+
+    @media(max-width:425px){
+        margin-left: 30px;
+        width: 200px;
+    }
+    @media(max-width:320px){
+        margin-left: 10px;
+    }
+}

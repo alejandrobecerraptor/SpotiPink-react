@@ -1,0 +1,67 @@
+.o-home-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.o-home-content-up {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 75%;
+    
+    background-image: url(https://i.pinimg.com/originals/29/17/3e/29173e1c12604930ad0856dda341744b.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+    height: 45%;
+    color: white;
+    font-size: 30px;
+    border-radius: 44px;
+    
+
+      @media (max-width: 1500px){
+        background-size: 800px 400px;
+      }
+
+  }
+
+  .o-home-content-down{
+    width: 100%;
+    height: 65%;
+
+    @media (max-width: 413px){
+
+    }
+  }
+
+.o-home-titulo{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 6px rgb(0, 0, 0);
+
+  @media (max-width:375px){
+    font-size: 20px
+  }
+}
+
+.o-home-newReleases{
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+
+    @media (max-width:375px){
+      font-size: 10px
+    }
+  }
+
+  .o-home-cards{
+    display: flex;
+    overflow: scroll;
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+}
+

@@ -1,0 +1,26 @@
+@import "../../../styles/colors.scss";
+
+.m-header{
+    background-color: $secondary-pink-dark;
+    padding: 1rem;
+}
+
+.m-header-into{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.m-titulo-logo{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none; 
+}
+
+.m-icons{
+    margin-right: 10px;
+    font-size: 15 px;
+}

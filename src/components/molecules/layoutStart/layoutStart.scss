@@ -1,0 +1,66 @@
+@import '../../../styles/colors.scss';
+
+.m-container-start{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.m-card-start{
+    width: 50%;
+    height: 90%;
+    background-color: #FAFAFA;
+    border-radius: 22px;
+    box-shadow: -2px 5px 10px 12px #f7cbe1;
+
+    @media (max-width: 768px){
+        width: 70%;
+    }
+
+    @media (max-width: 425px){
+        width: 90%;
+    }
+
+}
+
+.m-logotipo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 30%;
+
+    h1{
+        color: $primary-pink;
+        font-size: 60px;
+
+        @media (max-width: 425px){
+            font-size: 50px;
+    
+        }
+
+        @media (max-width: 425px){
+            font-size: 40px;
+    
+        }
+    }
+
+    .m-icon{
+        color: $primary-pink;
+        margin-left: 10px;;
+        font-size: 100px;
+
+        @media (max-width: 425px){
+            font-size: 60px;
+    
+        }
+    }
+    
+}
+
+.m-form-login{
+    display: flex;
+    height:70%;
+    justify-content:center;
+}

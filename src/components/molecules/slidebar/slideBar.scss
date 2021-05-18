@@ -1,0 +1,52 @@
+@import "../../../styles/colors.scss";
+
+
+.m-slidebar{
+    width: 250px;
+    height: 100vh;
+    border-right: 1px solid #fff;
+    background-color: $primary-pink-dark;
+
+    @media (max-width:375px){
+       width: 100px
+      }
+
+    ul{
+        list-style: none;
+        padding: 1rem 2rem;
+
+        @media (max-width:375px){
+         padding: 3px;
+        text-align: center;
+
+           }
+
+        li{
+            margin-bottom: 1rem;
+
+            a{
+                text-decoration: none;
+                border-radius: 20px;
+                padding:10px;
+                width: 100%;
+                display: inline-block;
+                color: #fff;
+
+                &.active {
+                    background-color: $primary-pink;
+                }
+
+                &:hover{
+                    background-color: $secondary-pink-dark;
+                    text-shadow: 1px 1px 6px #fff;
+                    }   
+
+            }
+        }
+    }
+
+    .m-icons{
+        margin-right: 15px;
+    }
+
+}

@@ -1,0 +1,74 @@
+@import '../../../styles/colors.scss';
+
+.m-nav{
+    display: flex;
+    ul{
+        display: flex;
+        list-style-type: none;
+        color: white;
+        li{
+            display: flex;
+
+            a{
+                display: flex;
+                justify-content: space-around;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 20px;
+                text-decoration: none;
+                margin-right: 20px;
+
+                .m-icon-logaout{
+                    font-size: 20px;
+                    margin-left: 10px;
+
+                    @media (max-width: 375px){
+                        margin-left: -17px;
+                    }
+                }
+
+            }
+
+            ul{
+                display: none;
+                position: absolute;
+                width: 160px;
+                z-index: 1;
+            }
+        }
+    }
+
+}
+
+nav > ul > li:hover > ul {
+        display: block;
+}
+
+nav > ul > li:hover > ul > li {
+    background-color: $primary-pink-dark;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 5px;
+    line-height: 20px;
+    margin-top: 20px;
+    transition: all 300ms;
+
+    @media (max-width: 320px){
+        margin-top: 40px;
+    }
+}
+
+nav > ul > li:hover > ul > li a {
+    display: flex;
+    text-align: center;
+    color: #fff !important;
+    font-size: 15px;
+    width: 130px;
+    cursor: pointer;
+}
+  
+  nav > ul > li:hover > ul > li:hover {
+    box-shadow: 0px 0px 6px #ccc inset;
+    background-color: rgb(173, 173, 173);
+  }
+

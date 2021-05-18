@@ -1,0 +1,14 @@
+@import '../../../styles/colors.scss';
+
+.o-meplaylist-container{
+    display: flex;
+    width: calc(100vw - 208px);
+    height: 100vh;
+
+    .o-box-favorites{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

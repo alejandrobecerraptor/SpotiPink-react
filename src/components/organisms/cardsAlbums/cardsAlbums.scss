@@ -1,0 +1,50 @@
+@import '../../../styles/colors.scss';
+
+.o-cardAlbum-container{
+    width: 200px;
+    height: 250px;;
+    margin-left: 40px;
+    background-color: #ccc;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+    &:hover{
+        box-shadow: 5px 5px 6px #fff;
+        }   
+
+    img{
+        margin: 8px;
+        margin-bottom: 0;
+        width: 183px;
+        height: 184px;
+        border-radius: 44px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+        @media (max-width: 425px){
+            width: 130px;
+            height: 130px;
+        }
+    }
+
+    @media (max-width: 425px){
+        width: 180px;
+        height: 200px;;
+    }
+
+    .o-cardAlbum-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: 10px;
+
+        h1{
+            color: whitesmoke;
+        }
+
+        h2{
+            text-align: left;
+            color: gray;
+        }
+
+    }
+}

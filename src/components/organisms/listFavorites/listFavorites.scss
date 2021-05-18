@@ -1,0 +1,15 @@
+@import '../../../styles/colors.scss';
+
+.o-favorites-container{
+    display: flex;
+    width: calc(100vw - 208px);
+    height: 100vh;
+}
+
+.o-box-favorites{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}

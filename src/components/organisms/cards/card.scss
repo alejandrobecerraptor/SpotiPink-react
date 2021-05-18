@@ -1,0 +1,51 @@
+@import '../../../styles/colors.scss';
+
+.o-card-container{
+    width: 200px;
+    height: 250px;
+    margin-top: 40px;
+    margin-left: 40px;
+    background-color: #ccc;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+    @media(max-width: 320px){
+        width: 150px;
+        height: 200px;
+    }
+
+    &:hover{
+        box-shadow: 5px 5px 6px #fff;
+        }   
+
+    img{
+        margin: 8px;
+        margin-bottom: 0;
+        width: 183px;
+        height: 184px;
+        border-radius: 44px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+        @media(max-width: 320px){
+            width: 120px;
+            height: 120px;
+            margin-left: 15px
+        }
+    }
+
+    .o-card-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: 10px;
+
+        h1{
+            color: whitesmoke;
+        }
+
+        h2{
+            color: gray;
+        }
+
+    }
+}

@@ -1,0 +1,98 @@
+@import "../../../../styles/colors.scss";
+
+.m-login-box{
+    display: flex;
+    flex-direction: column;
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        
+        @media (max-width: 375px){
+            width: 260px
+        }
+
+        label{
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        input{
+            margin-top: 10px;
+        }
+    }
+}
+
+.m-button-spotify{
+    display: flex;
+    margin-top: 10px;
+}
+.m-button-box{
+    display: flex;
+}
+
+input:focus, 
+textarea:focus {
+    outline: none;
+}
+
+label, 
+select, 
+button, 
+input[type="submit"], 
+input[type="radio"], 
+input[type="checkbox"] 
+input[type="button"] {
+    cursor: pointer;
+}
+
+* {
+    font-size:100%;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+form {
+    margin-top: 3px;
+  background:#fff;
+  border-radius:6px;
+  padding:20px;
+  padding-top:30px;
+  width:300px;
+  box-shadow:15px 15px 0px rgba(0,0,0,.1);
+}
+
+
+input {
+  width:100%;
+  background:#f5f5f5;
+  border:0;
+  padding:20px;
+  border-radius:6px;
+  margin-bottom:10px;
+  border:1px solid #eee;
+}
+
+.m-btn-login {
+  position:relative;
+  width:75%;
+  padding:10px;
+  margin-left: 6px;
+  border-radius:6px;
+  border:0;
+  background: $primary-pink;
+  font-size:1.2em;
+  color:#fff;
+  text-shadow:1px 1px 0px rgba(0,0,0,.1);
+  box-shadow:0px 3px 0px $primary-pink-dark;
+}
+
+.m-btn-login:active {
+  top:3px;
+  box-shadow:none;
+}
+
